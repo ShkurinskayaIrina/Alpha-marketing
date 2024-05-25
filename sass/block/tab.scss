@@ -1,0 +1,20 @@
+.tab {
+  list-style-type: none;
+  background-color: inherit;
+
+  &--active .tab__link {
+    color: $color-black-brown;
+    background-color: $color-gray;
+  }
+}
+
+.tab__link {
+  display: block;
+  border: 3px solid $color-gray;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}

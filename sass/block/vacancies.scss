@@ -1,0 +1,27 @@
+.vacancies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+
+.vacancies__heading {
+  letter-spacing: -0.8px;
+  text-align: left;
+}
+
+.vacancies__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+.vacancies__button {
+  display: inline-block;
+  align-self: center;
+  padding: 9px 26px 11px;
+  text-decoration: none;
+}

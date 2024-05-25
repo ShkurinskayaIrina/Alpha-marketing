@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пестовский Лесокомбинат</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="body">
+    <header class="header">
+      <button class="header__toggler" type="button" aria-label="Открыть меню"></button>
+      <img class="header__img logo" src="img/logo.svg" width="59" height="30" alt="Пестовский Лесокомбинат">
+      <ul class="header__list">
+        <li class="header__phone">
+          <span class="header__city">Санкт-Петербург:</span>
+          <a class="header__phone-number" href="tel:88126037222">8 (812) 603-72-22</a>
+        </li>
+        <li class="header__phone">
+          <span class="header__city">Москва:</span>
+          <a class="header__phone-number" href="tel:84993807733">8 (499) 380-77-33</a>
+        </li>
+      </ul>
+      <ul class="header__menu site-menu">
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="#">ГЛАВНАЯ</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="#">ДОМА</a>
+        </li>
+        <li class="site-menu__item">
+          <a class="site-menu__link" href="#">БАНИ</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <section class="main__header invitation">
+        <h1 class="invitation__heading">«Пестовский Лесокомбинат»</h1>
+        <p class="invitation__text">Cтань частью нашей команды!</p>
+        <a class="invitation__button button" href="#">ОТПРАВИТЬ АНКЕТУ</a>
+      </section>
+      <section class="main__section performance">
+        <h2 class="performance__heading page__subheading">О компании</h2>
+        <dl class="performance__list">
+          <div class="performance__item">
+            <dt class="performance__title">Города присутствия:<br>Санкт-Петербург и Москва</dt>
+            <dd class="performance__definition">2</dd>
+          </div>
+          <div class="performance__item">
+            <dt class="performance__title">Лет среди лидеров рынка</dt>
+            <dd class="performance__definition">&gt;30</dd>
+          </div>
+          <div class="performance__item">
+            <dt class="performance__title">Домов и бань сдаём ежегодно</dt>
+            <dd class="performance__definition">100</dd>
+          </div>
+        </dl>
+      </section>
+      <section class="main__section vacancies">
+        <h2 class="vacancies__heading page__subheading">Выбери подразделение:</h2>
+        <ul class="vacancies__divisions divisions">
+          <li class="divisions__item tab tab--active">
+            <a class="divisions__link tab__link" href="#">Строительный отдел
+            </a>
+          </li>
+          <li class="divisions__item tab">
+            <a class="divisions__link tab__link" href="#">Офис</a>
+          </li>
+          <li class="divisions__item tab">
+            <a class="divisions__link tab__link" href="#">Финансовый отдел</a>
+          </li>
+          <li class="divisions__item tab">
+            <a class="divisions__link tab__link" href="#">Отдел продаж</a>
+          </li>
+          <li class="divisions__item tab">
+            <a class="divisions__link tab__link" href="#">Внештатный сотрудник</a>
+          </li>
+        </ul>
+        <h2 class="visually-hidden">Список вакансий выбранного подразделения:</h2>
+        <ul class="vacancies__list card">
+          <li class="card__item toggler">
+            <input class="visually-hidden card__input toggler__input" id="foreman" type="checkbox">
+            <label class="card__title toggler__title" for="foreman">
+              <span class="card__annotation">
+                <span class="card__name">Прораб</span>
+                <span class="card__profit">ОТ 00 000 РУБ</span>
+              </span>
+              <span class="visually-hidden">Подробнее</span>
+              <span class="card__button toggler__button"></span>
+            </label>
+            <div class="card__details toggler__details">
+              <span>Задачи:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Наши ожидания:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Мы предлагаем:</span>
+              <ul>
+                <li>график 5/2 с гибким началом рабочего дня;</li>
+                <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                <li>ежеквартальную премию по итогам работы;</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card__item toggler">
+            <input class="visually-hidden card__input toggler__input" id="supplier" type="checkbox">
+            <label class="card__title toggler__title" for="supplier">
+              <span class="card__annotation">
+                <span class="card__name">Специалист службы снабжения</span>
+                <span class="card__profit">ОТ 00 000 РУБ</span>
+              </span>
+              <span class="visually-hidden">Подробнее</span>
+              <span class="card__button toggler__button"></span>
+            </label>
+            <div class="card__details toggler__details">
+              <span>Задачи:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Наши ожидания:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Мы предлагаем:</span>
+              <ul>
+                <li>график 5/2 с гибким началом рабочего дня;</li>
+                <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                <li>ежеквартальную премию по итогам работы;</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card__item toggler">
+            <input class="visually-hidden card__input toggler__input" id="logistician" type="checkbox">
+            <label class="card__title toggler__title" for="logistician">
+              <span class="card__annotation">
+                <span class="card__name">Логист</span>
+                <span class="card__profit">Обсуждается<br>на собеседовании</span>
+              </span>
+              <span class="visually-hidden">Подробнее</span>
+              <span class="card__button toggler__button"></span>
+            </label>
+            <div class="card__details toggler__details">
+              <span>Задачи:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Наши ожидания:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Мы предлагаем:</span>
+              <ul>
+                <li>график 5/2 с гибким началом рабочего дня;</li>
+                <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                <li>ежеквартальную премию по итогам работы;</li>
+              </ul>
+            </div>
+          </li>
+          <li class="card__item toggler">
+            <input class="visually-hidden card__input toggler__input" id="designer" type="checkbox">
+            <label class="card__title toggler__title" for="designer">
+              <span class="card__annotation">
+                <span class="card__name">Проектировщик</span>
+                <span class="card__profit">ОТ 00 000 РУБ</span>
+              </span>
+              <span class="visually-hidden">Подробнее</span>
+              <span class="card__button toggler__button"></span>
+            </label>
+            <div class="card__details toggler__details">
+              <span>Задачи:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Наши ожидания:</span>
+              <ul>
+                <li>описание</li>
+                <li>описание</li>
+              </ul>
+              <span>Мы предлагаем:</span>
+              <ul>
+                <li>график 5/2 с гибким началом рабочего дня;</li>
+                <li>оформление по ТК РФ с первого рабочего дня, полностью белую заработную плату;</li>
+                <li>ежеквартальную премию по итогам работы;</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <a class="vacancies__button button" href="#">Откликнуться на вакансию</a>
+      </section>
+      <section class="main__section advantages">
+        <h2 class="advantages__heading page__subheading">Преимущества Компании</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item toggler">
+            <input class="visually-hidden advantages__input toggler__input" id="quality" type="checkbox">
+            <label class="advantages__name toggler__title" for="quality">Качество продукта
+              <span class="visually-hidden">Подробнее</span>
+              <span class="advantages__button toggler__button"></span>
+            </label>
+            <p class="advantages__details toggler__details">
+              Мы гордимся результатами своей работы! Мы убеждены, что именно качество — это самое главное,<br>это то, что даёт Нам уверенность<br>в завтрашнем дне.
+            </p>
+          </li>
+          <li class="advantages__item toggler">
+            <input class="visually-hidden advantages__input toggler__input" id="popular" type="checkbox">
+            <label class="advantages__name toggler__title" for="popular">Популярность бренда в сети
+              <span class="visually-hidden">Подробнее</span>
+              <span class="advantages__button toggler__button"></span>
+            </label>
+            <p class="advantages__details toggler__details">
+              Мы занимаем высокие позиции в поисковой выдаче и имеем многочисленные отзывы, привлекающие новых заказчиков независимо от времени года.
+            </p>
+          </li>
+          <li class="advantages__item toggler">
+            <input class="visually-hidden advantages__input toggler__input" id="office" type="checkbox">
+            <label class="advantages__name toggler__title" for="office">Передовое рабочее место
+              <span class="visually-hidden">Подробнее</span>
+              <span class="advantages__button toggler__button"></span>
+            </label>
+            <p class="advantages__details toggler__details">
+              Комфортный офис в центре г. Санкт-Петербург, оборудованный передовыми технологиями. Твой рабочий компьютер может быть даже в твоём смартфоне!
+            </p>
+          </li>
+          <li class="advantages__item toggler">
+            <input class="visually-hidden advantages__input toggler__input" id="training" type="checkbox">
+            <label class="advantages__name toggler__title" for="training">Свои автоматизированные системы обучения
+              <span class="visually-hidden">Подробнее</span>
+              <span class="advantages__button toggler__button"></span>
+            </label>
+            <p class="advantages__details toggler__details">
+              Создали и постоянно улучшаем собственные автоматизированные системы обучения специалистов и повышения их квалификации внутри компании.
+            </p>
+          </li>
+          <li class="advantages__item toggler">
+            <input class="visually-hidden advantages__input toggler__input" id="cooperation" type="checkbox">
+            <label class="advantages__name toggler__title" for="cooperation">Сотрудничество с ведущими Компаниями рынка
+              <span class="visually-hidden">Подробнее</span>
+              <span class="advantages__button toggler__button"></span>
+            </label>
+
+            <p class="advantages__details toggler__details">
+              Сотрудничаем с ведущими Компаниями рынка строительных материалов: «Grand Line», «Петрович», «Окна Петербурга», «КраскиДоски», «Technonicol» и другими.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="main__section products">
+        <h2 class="products__heading page__subheading">Продукты компании</h2>
+        <ul class="products__categories">
+          <li class="products__item tab tab--active">
+            <a class="products__link tab__link" href="#">Бани</a>
+          </li>
+          <li class="products__item tab">
+            <a class="products__link tab__link" href="#">Дома</a>
+          </li>
+        </ul>
+        <div class="products__carousel carousel">
+          <div class="carousel__container">
+            <div class="carousel__controls controls">
+              <button class="controls__button controls__button--prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="controls__button controls__button--next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+            <ol class="carousel__list">
+              <li class="carousel__item slider slider--prev">
+                <img class="slider__img" src="/" width="130" height="147" alt="">
+              </li>
+              <li class="carousel__item slider slider--current">
+                <img class="slider__img" src="/" width="165" height="182"  alt="">
+              </li>
+              <li class="carousel__item slider slider--next">
+                <img class="slider__img" src="/" width="130" height="147"  alt="">
+              </li>
+            </ol>
+          </div>
+
+          <ol class="carousel__pagination pagination">
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">1 фото</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">2 фото</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">3 фото</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button  pagination__button--current" type="button">
+                <span class="visually-hidden">4 фото</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">5 фото</span>
+              </button>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="main__section outer">
+        <h2 class="outer__heading page__subheading">Карьерный рост</h2>
+        <div class="outer__description">
+          <p>
+            Наша Компания является ярким примером, где достойные люди смело и заслуженно поднимаются по карьерной лестнице.
+          </p>
+          <p>
+            Мы ценим стремление к развитию<br>и предоставляем все необходимые<br>для этого условия.
+          </p>
+        </div>
+        <div class="outer__carousel">
+          <div class="outer__controls controls">
+            <button class="controls__button controls__button--prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+            <button class="controls__button controls__button--next" type="button">
+              <span class="visually-hidden">Следующее фото</span>
+            </button>
+          </div>
+          <ul class="outer__list">
+            <li class="outer__item outer__item--current">
+              <img class="outer__img" src="img/staff/Oleg.webp" width="240" height="240" alt="" aria-hidden="true">
+              <span class="outer__caption">
+                <span class="outer__name">Олег Воробьёв</span>
+                <span class="outer__post">Прораб</span>
+              </span>
+              <ul class="outer__progress">
+                <li>
+                  В Компании с 2018 года. Начал с позиции плотника в строительной бригаде.
+                </li>
+                <li>
+                  В течение года работы Олег стал бригадиром и был приглашён в офис Компании на должность штатного Производителя строительных работ.
+                </li>
+                <li>
+                  На данный момент в Его подчинении находятся 9 строительных бригад. Олег вносит весомый вклад  итоговый результат Компании, а это реализация 100 объектов в год!
+                </li>
+              </ul>
+            </li>
+            <li class="outer__item">
+              <img class="outer__img" src="img/staff/Daniil.webp" width="240" height="240" alt="" aria-hidden="true">
+              <span class="outer__caption">
+                <span class="outer__name">Даниил Басенков</span>
+                <span class="outer__post">Менеджер по снабжению</span>
+              </span>
+              <ul class="outer__progress">
+                <li>
+                  В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                </li>
+                <li>
+                  После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный сотрудник, получил ответственную должность Логиста.
+                </li>
+                <li>
+                  Через год Даниил занял должность Специалиста службы снабжения, взяв на себя помимо закупа материала ещё и крайне важную роль Сметчика.
+                </li>
+              </ul>
+            </li>
+            <li class="outer__item">
+              <img class="outer__img" src="img/staff/Maria.webp" width="240" height="240" alt="" aria-hidden="true">
+              <span class="outer__caption">
+                <span class="outer__name">Мария Обухова</span>
+                <span class="outer__post">Руководитель финансовой службы</span>
+              </span>
+              <ul class="outer__progress">
+                <li>
+                  В декабре 2018 года заступил на должность Менеджера отдела продаж.
+                </li>
+                <li>
+                  После 9 месяцев стабильных результатов, зарекомендовав себя как надёжный сотрудник, получил ответственную должность Логиста.
+                </li>
+                <li>
+                  Через год Даниил занял должность Специалиста службы снабжения, взяв на себя помимо закупа материала ещё и крайне важную роль Сметчика.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="main__section success">
+        <h2 class="visually-hidden">Работа в команде</h2>
+        <div class="success__description">
+          <p>Наши успехи — это заслуга замечательных людей, работающих в нашей Команде.</p>
+          <p>У Нас всегда есть вакансии для сильных кандидатов</p>
+        </div>
+        <div class="success__invitation">
+          <p>Если чувствуешь в Себе потенциал и здоровые амбиции — ждём рядом<br>с Нами!</p>
+          <a class="success__button button" href="#">Присоединиться к команде</a>
+        </div>
+
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="contacts">
+        <div class="contacts__left">
+          <h2 class="contacts__heading">Контакты</h2>
+          <ul class="contacts__tabs">
+            <li class="contacts__spb tab tab--active">
+              <span class="tab__link">САНКТ-ПЕТЕРБУРГ</span>
+            </li>
+            <li class="contacts__msk tab">
+              <span class="tab__link">МОСКВА</span>
+            </li>
+          </ul>
+          <div class="contacts__list-wrapper">
+            <ul class="contacts__list contacts__list--spb  contacts__list--active">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__phone" href="tel:88126027760">8 (812) 602-77-60</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__mail" href="mailto:info@pplk.ru">info@pplk.ru</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__address-text" href="https://yandex.ru/maps/-/CCUCaZtzTA" target="_blank">
+                  ул. Заозёрная, д. 8 к. 2, офис 202<br>
+                  (7 мин. пешком от метро Фрунзенская)
+                </a>
+              </li>
+            </ul>
+
+            <ul class="contacts__list contacts__list--msk">
+              <li class="contacts__item">
+                <a class="contacts__link contacts__phone" href="tel:84993807733">8 (499) 380-77-33</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__mail" href="mailto:info@pplk.ru">info@pplk.ru</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__address-text" href="#">ул. Заозёрная, д. 8 к. 2, офис 202<br>
+                  (7 мин. пешком от метро Фрунзенская)
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="contacts__social social">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts__right">
+          <div class="footer__map map">
+            <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af90842c96a49d2cd017a91592f922fc59646c253f4928a6bce3c19f7fb30437e&amp;source=constructor"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__logo">
+        <p class="footer__text">
+          © 2023 Пестовский Лесокомбинат. Все права защищены.
+        </p>
+        <a class="footer__requisites" href="#">Реквизиты</a>
+        <a class="footer__politics" href="#">Политика конфиденциальности</a>
+        <a class="developer">
+          <span class="visually-hidden">Alhpa marketing Актуальный маркетинг и продажи</span>
+          <svg aria-hidden="true" focusable="false" fill="none" width="159" height="25" role="img">
+            <use xlink:href="img/sprite.svg#icon-developer"></use>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

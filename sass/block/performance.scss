@@ -1,0 +1,36 @@
+.performance__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin: 0;
+}
+
+.performance__item {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 15px;
+}
+
+.performance__title {
+  padding: 0 35px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.performance__definition {
+  margin: 0 auto;
+  padding: 15px;
+  min-width: 80px;
+  max-width: max-content;
+  min-height: 70px;
+  background-color: rgba($color-black, 0.7);
+  border-radius: 5px;
+  box-shadow:
+    0 0 10px 0 $color-white-green,
+    0 4px 4px 0 rgba($color-black, 0.5);
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  color: $color-green;
+}

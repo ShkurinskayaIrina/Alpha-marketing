@@ -1,0 +1,21 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.controls__button {
+  width: 20px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 0;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}

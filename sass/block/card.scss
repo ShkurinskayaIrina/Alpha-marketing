@@ -1,0 +1,104 @@
+.card__item {
+  padding: 27px;
+  padding-bottom: 29px;
+
+  border: 3px solid $color-gray;
+  border-radius: 30px;
+}
+
+.card__title {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  column-gap: 10px;
+  cursor: pointer;
+}
+
+.card__annotation {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.card__name {
+  position: relative;
+  margin: 0;
+  padding: 2px 0 2px 35px;
+
+  font-size: inherit;
+  line-height: 20px;
+  letter-spacing: 1px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  &::before {
+    background-color: $color-white;
+  }
+
+  &::after {
+    background-image: url("../img/icon/men.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.card__details {
+  display: none;
+  flex-direction: column;
+  row-gap: 7px;
+  margin-top: 11px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  & ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 18px;
+    list-style-type: disc;
+  }
+
+  & ul:last-of-type {
+    & li {
+      margin-bottom: 2.2px;
+    }
+  }
+}
+
+.card__profit {
+  position: relative;
+  padding: 2px 0 2px 35px;
+
+  font-size: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  word-spacing: -3px;
+  color: $color-green;
+
+  &::before {
+    content: "₽";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+    background-color: $color-white;
+  }
+}

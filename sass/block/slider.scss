@@ -1,0 +1,37 @@
+.slider {
+  position: relative;
+  width: 130px;
+  height: 147px;
+  box-shadow: 0 4px 4 0 rgba($color-light-gray, 0.25);
+  background-color: $color-light-gray;
+  border-radius: 10px;
+
+  &--prev::before,
+  &--next::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, rgba($color-black, 0.25), $color-black);
+    opacity: 0.7;
+  }
+
+  &--prev::before {
+    transform: rotate(180deg);
+  }
+
+  &--current {
+    width: 165px;
+    height: 182px;
+    background-image: none;
+    box-shadow: 0 0 0 5px rgba($color-light-gray, 0.25);
+  }
+}
+
+.slider__img {
+  border-radius: 10px;
+  object-fit: cover;
+}

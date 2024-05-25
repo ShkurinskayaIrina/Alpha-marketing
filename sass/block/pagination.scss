@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 9px;
+
+  margin: 0;
+  margin-top: 36px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pagination__item {
+  display: flex;
+}
+
+.pagination__button {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-black-gray;
+
+  &--current {
+    width: 42px;
+    border-radius: 25px;
+    background-color: $color-white;
+  }
+}

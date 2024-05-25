@@ -1,0 +1,16 @@
+.main {
+  background-color: $color-black-brown;
+  color: $color-white;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  padding: 45px 20px;
+  text-align: center;
+
+  &:nth-child(2n+4) {
+    background-color: $color-dark-green;
+  }
+}

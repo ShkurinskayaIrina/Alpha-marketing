@@ -1,0 +1,44 @@
+.toggler__button {
+  position: relative;
+  display: block;
+  padding: 0;
+  width: 25px;
+  height: 25px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: $color-green;
+  align-self: center;
+
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 7px);
+    top: calc(50% - 1.5px);
+    width: 15px;
+    height: 3px;
+    background-color: $color-white;
+  }
+
+  &::after {
+    transform: rotate(90deg);
+  }
+}
+
+.toggler__input[type="checkbox"]:checked {
+  & ~ .toggler__details {
+    display: flex;
+  }
+
+  & + .toggler__title .toggler__button::before {
+    transform: rotate(45deg);
+  }
+
+  & + .toggler__title .toggler__button::after {
+    transform: rotate(-45deg);
+  }
+}

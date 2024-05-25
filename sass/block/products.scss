@@ -1,0 +1,19 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  margin: 0 -20px;
+}
+
+.products__categories {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.products__link {
+  min-width: 108px;
+  padding: 5px 0 6px;
+}

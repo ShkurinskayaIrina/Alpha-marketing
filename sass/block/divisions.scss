@@ -1,0 +1,13 @@
+.divisions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.divisions__link {
+  padding: 5px 12px 6px;
+}

@@ -1,0 +1,36 @@
+.invitation {
+  padding: 270px 10px 45px;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/background/invitation-modile.webp");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/invitation-modile@2x.webp");
+    }
+  }
+}
+
+.invitation__heading {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: -1.1px;
+}
+
+.invitation__text {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.invitation__button {
+  display: inline-block;
+  margin-top: 19px;
+  text-decoration: none;
+}

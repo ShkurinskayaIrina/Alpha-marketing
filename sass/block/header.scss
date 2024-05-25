@@ -1,0 +1,72 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  align-items: center;
+  background-color: $color-dark-green;
+  color: $color-white;
+  padding: 0 10px;
+}
+
+.header__toggler {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      right: 0;
+      left: 10px;
+      width: 20px;
+      height: 1.5px;
+      background-color: $color-white;
+      box-shadow: 0 6px 0 0 $color-white, 0 12px 0 0 $color-white;
+    }
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding: 5px 0;
+  word-spacing: -2px;
+}
+
+.header__city {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.header__phone {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__phone-number {
+  text-decoration: none;
+  color: inherit;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.header__menu {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
